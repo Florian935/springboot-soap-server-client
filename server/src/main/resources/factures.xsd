@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:8080"
+           targetNamespace="http://localhost:8080" elementFormDefault="qualified">
+
+    <xs:element name="getFactureRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getFactureResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="facture" type="tns:facture"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getFacturesRequest">
+        <xs:complexType>
+            <xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getFacturesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="10000" name="facture" type="tns:facture"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addFactureRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="facture" type="tns:facture"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addFactureResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="facture" type="tns:facture"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="facture">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prix" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+

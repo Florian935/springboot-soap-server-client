@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.2 
+Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2021.06.20 à 11:48:36 PM CEST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://localhost:8080">
+    <schemaBindings map="false">
+      <package name="localhost._8080"/>
+    </schemaBindings>
+    <bindings scd="tns:getFactureRequest">
+      <class ref="localhost._8080.GetFactureRequest"/>
+    </bindings>
+    <bindings scd="tns:getFactureResponse">
+      <class ref="localhost._8080.GetFactureResponse"/>
+    </bindings>
+    <bindings scd="~tns:facture">
+      <class ref="localhost._8080.Facture"/>
+    </bindings>
+    <bindings scd="tns:getFacturesRequest">
+      <class ref="localhost._8080.GetFacturesRequest"/>
+    </bindings>
+    <bindings scd="tns:getFacturesResponse">
+      <class ref="localhost._8080.GetFacturesResponse"/>
+    </bindings>
+    <bindings scd="tns:addFactureRequest">
+      <class ref="localhost._8080.AddFactureRequest"/>
+    </bindings>
+    <bindings scd="tns:addFactureResponse">
+      <class ref="localhost._8080.AddFactureResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
